@@ -110,6 +110,11 @@ state_trend = state_df[state_df['state'] == selected_state]
 
 plt.figure(figsize=(11, 4))
 plt.plot(state_trend['date'], state_trend['total_bio_updates'], marker='o')
+
+# Add value labels on each point
+for x, y in zip(state_trend['date'], state_trend['total_bio_updates']):
+    plt.text(x, y, f"{int(y)}", fontsize=8, ha='center', va='bottom')
+
 plt.xticks(rotation=90)
 plt.grid(True, linestyle="--", alpha=0.4)
 plt.xlabel("Date")

@@ -164,7 +164,7 @@ else:
     for v in values:
         if v < 2:
             colors.append("#2ecc71")   # Green
-        elif 2 <= v <= 2.5:
+        elif 2 <= v <= 2.2:
             colors.append("#f39c12")   # Orange
         else:
             colors.append("#e74c3c")   # Red
@@ -184,8 +184,8 @@ else:
     st.markdown("""
     **Risk Levels**  
     🟢 Low (< 2)  
-    🟠 Medium (2 – 2.5)  
-    🔴 High (> 2.5)
+    🟠 Medium (2 – 2.2)  
+    🔴 High (> 2.2)
     """)
 
 st.markdown("</div>", unsafe_allow_html=True)
